@@ -1,4 +1,4 @@
-# Roscommon Events 2015 API ![alt text](http://me.johnmalcolmdesign.com/RosLogo80.png "Logo Title Text 1")
+# Roscommon Events API ![alt text](http://me.johnmalcolmdesign.com/RosLogo80.png "Roscommon Coat of Arms")
 ## Data Representation and Querying Project 2015 
 ### John Malcolm Anderson 
 
