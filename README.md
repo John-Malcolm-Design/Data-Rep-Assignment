@@ -32,7 +32,6 @@ There are 19 values for each event, which are all returned as **String** for API
 - **editor**: The last editor of the event.
 
 Asterix = required field. All other fields may be null.
-
 Fields auto-generated on the server = *event_id*,  *creation_date*, *creator*, *edit_date*, *editor*.
 
 ## Endpoints
