@@ -1,8 +1,8 @@
-# Roscommon Calendar of Events 2015 API 
-## Data Representation and Querying Project 2015 ![alt text](http://me.johnmalcolmdesign.com/RosLogo80.png "Logo Title Text 1")
-### John Malcolm Anderson
+# Roscommon Events 2015 API ![alt text](http://me.johnmalcolmdesign.com/RosLogo80.png "Logo Title Text 1")
+## Data Representation and Querying Project 2015 
+### John Malcolm Anderson 
 
-## Introduction
+## Introduction 
 This project provides the design and documentation for the dataset Roscommon Calendar of Events 2015 which is available at [data.gov.ie](http://roscommon.roscoco.opendata.arcgis.com/datasets/fbae9c86e6e1441bbea951893744f3bc_0). 
 
 The main purpose of this API is to share events that are happening in Roscommon to various media outlets and any interested parties via a simple RESTfull API. The secondary usage is an ability for trusted event organisers and media outlets to post, update & delete events. Authentication is handled with the highly trusted [OAuth 1.0 Protocol](http://tools.ietf.org/html/rfc5849).  
