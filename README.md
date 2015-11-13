@@ -50,6 +50,7 @@ HTTP/1.1 200 OK
 **JSON Returned**
 [Example JSON File.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
 
+
 #### Get a specific events details:
 **GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 
@@ -80,6 +81,7 @@ HTTP/1.1 200 OK
   "editor": ""
 }
 ```
+
 #### Create an event
 **POST:** *http://www.roscommoncoco.ie/api/events/*.
 
