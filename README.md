@@ -201,12 +201,20 @@ Content-Length: 19
 ### Deleting an event
 **DELETE:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 
+**HTTP Request Example**
+```http
+DELETE /api/events/43 HTTP/1.1
+Host: roscommoncoco.ie
+Content-Type: application/json; charset=utf-8
+Content-Length: 1
+{"OAuthCredentials": [...]}
+```
 **HTTP Response Example**
 ```http
 HTTP/1.1 204 No Content
 ```
 
-*Most errors return 400 Bad Request. A bad request, for example, will receive a response like this:*
+####Most errors return 400 Bad Request. A bad request, for example, will receive a response like this:
 ```http
 HTTP/1.1 400 Bad Request
 
