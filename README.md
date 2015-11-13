@@ -31,7 +31,9 @@ There are 19 values for each event, which are all returned as **String** for API
 - **edit_date**: The date event was last edited.
 - **editor**: The last editor of the event.
 
-Asterix (*) = required field. All other fields may be null.
+Asterix = required field all other fields may be null.
+
+Fields auto-generated on the server = *event_id*,  *creation_date*, *creator*, *edit_date*, *editor*.
 
 ## Methods
 Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods besides those under the "Reading" heading require [authenticaton](link to authentication section).
@@ -40,12 +42,22 @@ Below is a list of API endpoints organised via the your typical operations on th
 #### List all Roscommon 2015 events:
 **GET:** *http://www.roscommoncoco.ie/api/events/*.
 
-An example of the JSON file returned can be viewed [here.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
+**HTTP Response**
+```http
+HTTP/1.1 200 OK
+```
+
+**JSON Returned**
+[here.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
 
 #### Get a specific events details:
 **GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 
-Example Response:
+**HTTP Response**
+```http
+HTTP/1.1 200 OK
+```
+**JSON Returned**
 ```json
 {
   "event_id": "1",
@@ -68,7 +80,54 @@ Example Response:
   "editor": ""
 }
 ```
-### Creating
+#### Create an event
+**POST:** *http://www.roscommoncoco.ie/api/events/*.
+
+**HTTP Request**
+```http
+POST /api/events/ HTTP/1.1
+Host: roscommoncoco.ie
+Content-Type: application/json; charset=utf-8
+Content-Length: 19
+  {
+    "month ": "March",
+    "event_date": "March 18th",
+    "event_name": "Roscommon Womens Network Charity 5km Fun Run",
+    "day": "Wednesday",
+    "type": "Charity",
+    "address": "Roscommon",
+    "lat": "53.627591",
+    "long": "-8.189096",
+    "telephone": "094 9621690",
+    [OAuthCredentials ... ]
+  }
+
+```
+
+**HTTP Response**
+```http
+HTTP/1.1 201 Created
+  {
+    "event_id": "1",
+    "month ": "March",
+    "event_date": "March 18th",
+    "event_name": "Roscommon Womens Network Charity 5km Fun Run",
+    "day": "Wednesday",
+    "type": "Charity",
+    "time": "",
+    "image_url": "",
+    "address": "Roscommon",
+    "lat": "53.627591",
+    "long": "-8.189096",
+    "telephone": "094 9621690",
+    "email": "",
+    "website": "",
+    "creation_date": "2015-04-01T09:48:54.005Z",
+    "creator": "RoscomCoCoGIS",
+    "edit_date": "2015-04-01T10:15:53.670Z",
+    "editor": ""
+  }
+```
 
 ### Updating
 
