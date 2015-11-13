@@ -36,7 +36,7 @@ Asterix = required field. All other fields may be null.
 Fields auto-generated on the server = *event_id*,  *creation_date*, *creator*, *edit_date*, *editor*.
 
 ## Endpoints
-Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods besides GET require [authenticaton](link to authentication section).
+Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods except for GET require [authenticaton](link to authentication section).
 
 ### Get all events
 **GET:** *http://www.roscommoncoco.ie/api/events/*.
@@ -63,13 +63,15 @@ HTTP/1.1 200 OK
 #### Parameters
 Because this is a RESTfull API  want to keep the URL's as clean as possible. Any additional query paramaters are to be passed into the HTTP request as key value pairs. All paramaters are passed in as Strings.
 
-*Available Paramaters*
-Key | Example Value
---- | --- 
-month |  "December" 
-creator | "FTC Media"
-type | "Theatre" 
-sort | "ASC" or "DSC"
+**Paramaters accepted**
+
+Key     | Value (example) | Description
+:-----: | :--------------:| -----------
+month   | "December"      | Returns events from a certain month.
+creator | "FTC Media"     | Returns events of a specified creator.
+type    | "Theatre"       | Returns events of a specified type.
+sort    | "ASC" or "DSC"  | Sorts the results by name of event.
+limit   | "100"           | Limits amount of events returned.
 
 ### Get specific event
 **GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
@@ -194,4 +196,5 @@ HTTP/1.1 400 Bad Request
 
 {"message": "Unable to decode data"}
 ```
+
 
