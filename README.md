@@ -72,7 +72,7 @@ HTTP/1.1 200 OK
 [Example of JSON returned.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
 
 
-### Get a specific event
+### Get specific event
 **GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 
 **HTTP Response**
