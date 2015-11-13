@@ -35,7 +35,7 @@ Asterix = required field all other fields may be null.
 
 Fields auto-generated on the server = *event_id*,  *creation_date*, *creator*, *edit_date*, *editor*.
 
-## Methods
+## Endpoints
 Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods besides those under the "Reading" heading require [authenticaton](link to authentication section).
 
 ### Get all events
@@ -199,5 +199,16 @@ Content-Length: 19
 ```
 
 ### Deleting an event
+**DELETE:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 
+**HTTP Response Example**
+```http
+HTTP/1.1 204 No Content
+```
 
+*Most errors return 400 Bad Request. A bad request, for example, will receive a response like this:*
+```http
+HTTP/1.1 400 Bad Request
+
+{"message": "Unable to decode data"}
+```
