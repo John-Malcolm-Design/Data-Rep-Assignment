@@ -31,12 +31,12 @@ There are 19 values for each event, which are all returned as **String** for API
 - **edit_date**: The date event was last edited.
 - **editor**: The last editor of the event.
 
-Asterix = required field all other fields may be null.
+Asterix = required field. All other fields may be null.
 
 Fields auto-generated on the server = *event_id*,  *creation_date*, *creator*, *edit_date*, *editor*.
 
 ## Endpoints
-Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods besides those under the "Reading" heading require [authenticaton](link to authentication section).
+Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods besides GET require [authenticaton](link to authentication section).
 
 ### Get all events
 **GET:** *http://www.roscommoncoco.ie/api/events/*.
@@ -60,6 +60,16 @@ HTTP/1.1 200 OK
 
 [Example of JSON returned.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
 
+#### Parameters
+Because this is a RESTfull API  want to keep the URL's as clean as possible. Any additional query paramaters are to be passed into the HTTP request as key value pairs. All paramaters are passed in as Strings.
+
+*Available Paramaters*
+Key | Example Value
+--- | --- 
+month |  "December" 
+creator | "FTC Media"
+type | "Theatre" 
+sort | "ASC" or "DSC"
 
 ### Get specific event
 **GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
@@ -177,9 +187,11 @@ Content-Length: 1
 HTTP/1.1 204 No Content
 ```
 
+
 ####Most errors return 400 Bad Request. A bad request, for example, will receive a response like this:
 ```http
 HTTP/1.1 400 Bad Request
 
 {"message": "Unable to decode data"}
 ```
+
