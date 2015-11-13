@@ -44,10 +44,34 @@ Below is a list of API endpoints organised via the your typical operations on th
 **HTTP Response**
 ```http
 HTTP/1.1 200 OK
+[
+  {
+    "event_id": "1",
+    "month ": "March",
+    "event_date": "March 18th",
+    "event_name": "Roscommon Womens Network Charity 5km Fun Run",
+    "day": "Wednesday",
+    "type": "Charity",
+    "time": "",
+    "image_url": "",
+    "address": "Roscommon",
+    "lat": "53.627591",
+    "long": "-8.189096",
+    "telephone": "094 9621690",
+    "email": "",
+    "website": "",
+    "creation_date": "2015-04-01T09:48:54.005Z",
+    "creator": "RoscomCoCoGIS",
+    "edit_date": "2015-04-01T10:15:53.670Z",
+    "editor": ""
+  },
+  .
+  .
+  .
+]
 ```
 
-**JSON Returned**
-[Example JSON File.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
+[Example of JSON returned.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
 
 
 ### Get a specific event
@@ -56,9 +80,6 @@ HTTP/1.1 200 OK
 **HTTP Response**
 ```http
 HTTP/1.1 200 OK
-```
-**JSON Returned**
-```json
 {
   "event_id": "1",
   "month ": "March",
