@@ -36,7 +36,7 @@ Asterix = required field. All other fields may be null.
 Fields auto-generated on the server = *event_id*,  *creation_date*, *creator*, *edit_date*, *editor*.
 
 ## Endpoints
-Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods except for GET require [authenticaton](link to authentication section).
+Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods except for "GET" require OAuth credentials.
 
 ### Get all events
 **GET:** *http://www.roscommoncoco.ie/api/events/*.
@@ -135,6 +135,7 @@ Content-Length: 19
 
 ### Update an event
 **PATCH:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
+Patching an event is limited to events that you have created.
 
 **HTTP Request Example**
 ```http
@@ -175,6 +176,7 @@ Content-Length: 19
 
 ### Deleting an event
 **DELETE:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
+Deleting an event is limited to events that you created.
 
 **HTTP Request Example**
 ```http
@@ -197,4 +199,4 @@ HTTP/1.1 400 Bad Request
 {"message": "Unable to decode data"}
 ```
 
-
+If you would like to request OAuth credentials and setup info for contributing to this API please email apiadmin@roscommoncoco.ie. 
