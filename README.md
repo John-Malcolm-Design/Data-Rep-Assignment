@@ -52,20 +52,9 @@ HTTP/1.1 200 OK
     "event_name": "Roscommon Womens Network Charity 5km Fun Run",
     "day": "Wednesday",
     "type": "Charity",
-    "time": "",
-    "image_url": "",
-    "address": "Roscommon",
-    "lat": "53.627591",
-    "long": "-8.189096",
-    "telephone": "0949621690",
-    "email": "",
-    "website": "",
-    "creation_date": "2015-04-01T09:48:54.005Z",
-    "creator": "RoscomCoCoGIS",
-    "edit_date": "2015-04-01T10:15:53.670Z",
-    "editor": ""
+    [...]
   },
-  ...
+  [...]
 ]
 ```
 
@@ -85,18 +74,7 @@ HTTP/1.1 200 OK
   "event_name": "Roscommon Womens Network Charity 5km Fun Run",
   "day": "Wednesday",
   "type": "Charity",
-  "time": "",
-  "image_url": "",
-  "address": "Roscommon",
-  "lat": "53.627591",
-  "long": "-8.189096",
-  "telephone": "0949621690",
-  "email": "",
-  "website": "",
-  "creation_date": "2015-04-01T09:48:54.005Z",
-  "creator": "RoscomCoCoGIS",
-  "edit_date": "2015-04-01T10:15:53.670Z",
-  "editor": ""
+  [...]
 }
 ```
 
@@ -135,14 +113,7 @@ Content-Length: 19
     "event_name": "Roscommon Womens Network Charity 5km Fun Run",
     "day": "Wednesday",
     "type": "Charity",
-    "time": "",
-    "image_url": "",
-    "address": "Roscommon",
-    "lat": "53.627591",
-    "long": "-8.189096",
-    "telephone": "0949621690",
-    "email": "",
-    "website": "",
+    [...]
     "creation_date": "2015-04-01T09:48:54.005Z",
     "creator": "RoscomCoCoGIS",
     "edit_date": "2015-04-01T10:15:53.670Z",
@@ -181,15 +152,7 @@ Content-Length: 19
   "event_date": "March 21th",
   "event_name": "Roscommon Womens Network Charity 5km Fun Run",
   "day": "Friday",
-  "type": "Charity",
-  "time": "",
-  "image_url": "",
-  "address": "Roscommon",
-  "lat": "53.627591",
-  "long": "-8.189096",
-  "telephone": "0870642570",
-  "email": "",
-  "website": "",
+  [...]
   "creation_date": "2015-04-01T09:48:54.005Z",
   "creator": "RoscomCoCoGIS",
   "edit_date": "2015-04-01T10:15:53.670Z",
