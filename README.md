@@ -38,8 +38,7 @@ Fields auto-generated on the server = *event_id*,  *creation_date*, *creator*, *
 ## Methods
 Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods besides those under the "Reading" heading require [authenticaton](link to authentication section).
 
-### Reading
-#### List all Roscommon 2015 events:
+### Get all events
 **GET:** *http://www.roscommoncoco.ie/api/events/*.
 
 **HTTP Response**
@@ -51,7 +50,7 @@ HTTP/1.1 200 OK
 [Example JSON File.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
 
 
-#### Get a specific events details:
+### Get a specific event
 **GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 
 **HTTP Response**
@@ -82,7 +81,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Create an event
+### Create an event
 **POST:** *http://www.roscommoncoco.ie/api/events/*.
 
 **HTTP Request**
