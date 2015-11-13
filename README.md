@@ -48,7 +48,7 @@ HTTP/1.1 200 OK
 ```
 
 **JSON Returned**
-[here.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
+[Example JSON File.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
 
 #### Get a specific events details:
 **GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
