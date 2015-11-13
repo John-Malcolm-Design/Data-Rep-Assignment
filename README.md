@@ -1,5 +1,5 @@
-# Roscommon Calendar of Events 2015 API ![alt text](http://me.johnmalcolmdesign.com/RosLogo80.png "Logo Title Text 1")
-## Data Representation and Querying Project 2015
+# Roscommon Calendar of Events 2015 API 
+## Data Representation and Querying Project 2015 ![alt text](http://me.johnmalcolmdesign.com/RosLogo80.png "Logo Title Text 1")
 ### John Malcolm Anderson
 
 ## Introduction
