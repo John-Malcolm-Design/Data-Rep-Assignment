@@ -34,19 +34,42 @@ There are 19 values for each event, which are all returned as **String** for API
 Asterix (*) = required field. All other fields may be null.
 
 ## Methods
-Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. All methods besides those under the "Reading" heading require [authenticaton](link to authentication section).
-
-### Creating
-##### List all Roscommon 2015 events:
-**GET** *http://www.roscommoncoco.ie/api/events*.
-
-An example of the type of JSON file returned can be downloaded [here.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
+Below is a list of API endpoints organised via the your typical operations on the data: Create, Read, Update and Delete. The format is: "HTTP Method: Endpoint URL". All methods besides those under the "Reading" heading require [authenticaton](link to authentication section).
 
 ### Reading
-The data will be returned in JSON format. An example of a response would be:
-```json
+#### List all Roscommon 2015 events:
+**GET:** *http://www.roscommoncoco.ie/api/events/*.
 
+An example of the JSON file returned can be viewed [here.](http://me.johnmalcolmdesign.com/roscommon_events_2015.json)
+
+#### Get a specific events details:
+**GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
+
+Example Response:
+```json
+{
+  "event_id": "1",
+  "month ": "March",
+  "event_date": "March 18th",
+  "event_name": "Roscommon Womens Network Charity 5km Fun Run",
+  "day": "Wednesday",
+  "type": "Charity",
+  "time": "",
+  "image_url": "",
+  "address": "Roscommon",
+  "lat": "53.627591",
+  "long": "-8.189096",
+  "telephone": "094 9621690",
+  "email": "",
+  "website": "",
+  "creation_date": "2015-04-01T09:48:54.005Z",
+  "creator": "RoscomCoCoGIS",
+  "edit_date": "2015-04-01T10:15:53.670Z",
+  "editor": ""
+}
 ```
+### Creating
+
 ### Updating
 
 ### Deleting
