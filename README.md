@@ -41,7 +41,7 @@ Below is a list of API endpoints organised via the your typical operations on th
 ### Get all events
 **GET:** *http://www.roscommoncoco.ie/api/events/*.
 
-**HTTP Response**
+**HTTP Response Example**
 ```http
 HTTP/1.1 200 OK
 [
@@ -57,7 +57,7 @@ HTTP/1.1 200 OK
     "address": "Roscommon",
     "lat": "53.627591",
     "long": "-8.189096",
-    "telephone": "094 9621690",
+    "telephone": "0949621690",
     "email": "",
     "website": "",
     "creation_date": "2015-04-01T09:48:54.005Z",
@@ -75,7 +75,7 @@ HTTP/1.1 200 OK
 ### Get specific event
 **GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 
-**HTTP Response**
+**HTTP Response Example**
 ```http
 HTTP/1.1 200 OK
 {
@@ -90,7 +90,7 @@ HTTP/1.1 200 OK
   "address": "Roscommon",
   "lat": "53.627591",
   "long": "-8.189096",
-  "telephone": "094 9621690",
+  "telephone": "0949621690",
   "email": "",
   "website": "",
   "creation_date": "2015-04-01T09:48:54.005Z",
@@ -103,12 +103,10 @@ HTTP/1.1 200 OK
 ### Create an event
 **POST:** *http://www.roscommoncoco.ie/api/events/*.
 
-**HTTP Request**
+**HTTP Request Example**
 ```http
 POST /api/events/ HTTP/1.1
 Host: roscommoncoco.ie
-Content-Type: application/json; charset=utf-8
-Content-Length: 19
   {
     "month ": "March",
     "event_date": "March 18th",
@@ -118,15 +116,18 @@ Content-Length: 19
     "address": "Roscommon",
     "lat": "53.627591",
     "long": "-8.189096",
-    "telephone": "094 9621690",
+    "telephone": "0949621690",
     [OAuthCredentials ... ]
   }
 
 ```
 
-**HTTP Response**
+**HTTP Response Example**
 ```http
 HTTP/1.1 201 Created
+Host: roscommoncoco.ie
+Content-Type: application/json; charset=utf-8
+Content-Length: 19
   {
     "event_id": "1",
     "month ": "March",
@@ -139,7 +140,7 @@ HTTP/1.1 201 Created
     "address": "Roscommon",
     "lat": "53.627591",
     "long": "-8.189096",
-    "telephone": "094 9621690",
+    "telephone": "0949621690",
     "email": "",
     "website": "",
     "creation_date": "2015-04-01T09:48:54.005Z",
@@ -149,8 +150,54 @@ HTTP/1.1 201 Created
   }
 ```
 
-### Updating
+### Update an event
+**PATCH:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 
-### Deleting
+**HTTP Request Example**
+```http
+PATCH /api/events/43 HTTP/1.1
+Host: roscommoncoco.ie
+Content-Type: application/json; charset=utf-8
+Content-Length: 19
+{
+  "event_date": "March 22th",
+  "day": "Friday",
+  "address": "Roscommon",
+  "telephone": "0870642570",
+  [OAuthCredentials ... ]
+}
+
+```
+
+**HTTP Response Example**
+```http
+PATCH /api/events/43 HTTP/1.1
+Host: roscommoncoco.ie
+Content-Type: application/json; charset=utf-8
+Content-Length: 19
+{
+  "event_id": "43",
+  "month ": "March",
+  "event_date": "March 21th",
+  "event_name": "Roscommon Womens Network Charity 5km Fun Run",
+  "day": "Friday",
+  "type": "Charity",
+  "time": "",
+  "image_url": "",
+  "address": "Roscommon",
+  "lat": "53.627591",
+  "long": "-8.189096",
+  "telephone": "0870642570",
+  "email": "",
+  "website": "",
+  "creation_date": "2015-04-01T09:48:54.005Z",
+  "creator": "RoscomCoCoGIS",
+  "edit_date": "2015-04-01T10:15:53.670Z",
+  "editor": "FCP Media"
+}
+
+```
+
+### Deleting an event
 
 
