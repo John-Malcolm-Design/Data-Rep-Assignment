@@ -72,7 +72,7 @@ type    | "Theatre"       | Returns events of a specified type.
 sort    | "ASC" or "DSC"  | Sorts the results by name of event.
 limit   | "100"           | Limits amount of events returned.
 
-### Get specific event
+### Get a single event
 **GET:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 
 **HTTP Response Example**
@@ -173,7 +173,7 @@ Content-Length: 19
 
 ```
 
-### Deleting an event
+### Delete an event
 **DELETE:** *http://www.roscommoncoco.ie/api/events/[event_id]*.
 Deleting an event is limited to events that you created.
 
